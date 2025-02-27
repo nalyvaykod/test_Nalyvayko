@@ -32,7 +32,7 @@ transform = transforms.Compose([
 def classify_image(image_path):
     """Classifies an image and returns the predicted class index."""
     if not os.path.exists(image_path):
-        raise FileNotFoundError(f"❌ Image file '{image_path}' not found.")
+        raise FileNotFoundError(f"Image file '{image_path}' not found.")
 
     image = Image.open(image_path).convert("RGB")  
     image = transform(image).unsqueeze(0)
@@ -55,7 +55,7 @@ if len(custom_mapping) == num_classes:
 def check_text_image_match(text, image_path):
     """Checks if the text correctly describes the image."""
     if not text:
-        raise ValueError("❌ Provided text is empty.")
+        raise ValueError("Provided text is empty.")
 
     extracted_animals = extract_animal(text)  # Get animal names from text
     predicted_class = classify_image(image_path)  # Predict image class
