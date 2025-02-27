@@ -12,34 +12,6 @@ Convolutional Neural Network (CNN) - Deep learning approach
 
 Each model is encapsulated in a class that implements the MnistClassifierInterface, ensuring a uniform API.
 
-Project Structure
-
-mnist_classifier/
-│── cnn_classifier/
-│   ├── convolutional_classifier.py
-│   ├── convolutional_classifier.ipynb
-│   ├── __init__.py
-│
-│── fnn_classifier/
-│   ├── feed_forward_classifier.py
-│   ├── feed_forward_classifier.ipynb
-│   ├── __init__.py
-│
-│── rf_classifier/
-│   ├── random_forest_classifier.py
-│   ├── random_forest_classifier.ipynb
-│   ├── __init__.py
-│
-│── data/  # Stores the MNIST dataset
-│
-│── demo/
-│   ├── mnist_demo.ipynb
-│
-│── mnist_classifier.py  # Main classifier wrapper
-│── mnist_classifier_interface.py  # Interface definition
-│── requirements.txt  # Dependencies
-│── README.md  # Documentation
-
 Installation
 
 Clone the repository:
